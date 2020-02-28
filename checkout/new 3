@@ -1,0 +1,54 @@
+var i,j;
+for(i=1;i>5;i++){
+console.log(i)
+}
+
+var a = $('a');
+for(var i=0;i<a.length;i++)
+{
+	if(a[i].href)
+    
+   console.log(a[i].href);
+}
+
+
+
+import requests
+from bs4 import BeautifulSoup
+
+getpage= requests.get('http://www.learningaboutelectronics.com')
+
+getpage_soup= BeautifulSoup(getpage.text, 'html.parser')
+
+all_links= getpage_soup.findAll('a')
+
+for link in all_links:
+    print (link.get("href"))
+	
+	
+	import requests
+from bs4 import BeautifulSoup
+
+getpage= requests.get('https://www.w3schools.com/python/python_ref_file.asp')
+
+getpage_soup= BeautifulSoup(getpage.text, 'html.parser')
+
+all_links= getpage_soup.findAll('a')
+
+for link in all_links:
+    print (link)
+	
+	
+	
+	import requests
+from bs4 import BeautifulSoup
+
+getpage= requests.get('http://www.learningaboutelectronics.com')
+
+getpage_soup= BeautifulSoup(getpage.text, 'html.parser')
+
+all_links= getpage_soup.findAll('a')
+
+for link in all_links:
+    print (link)
+    

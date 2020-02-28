@@ -1,0 +1,30 @@
+re.search("^https://www.googletagmanager.com/gtm.js.*")
+
+
+
+"^https://www.googletagmanager.com/gtm.js.*"
+"^https://www.google-analytics.com/analytics.js.*"
+"^https://www.google-analytics.com/plugins/ua/linkid.js.*"
+"^https://www.google-analytics.com/collect.*"
+"^https://somniture.dbs.com.sg/b/ss.*"
+"^https://connect.facebook.net/en_US/fbevents.js.*"
+"^https://connect.facebook.net/signals/config.*"
+"^https://www.facebook.com/tr.*"
+
+
+ elif re.search("^https://www.google-analytics.com/analytics.js.*",df["Hit"][i]):
+        Type[i] = "Google Anlaytics"
+ elif re.search("^https://www.google-analytics.com/plugins/ua/linkid.js.*",df["Hit"][i]):
+        Type[i] = "Google Anlaytics"
+ elif re.search("^https://www.google-analytics.com/collect.*",df["Hit"][i]):
+        Type[i] = "Google Anlaytics"
+ elif re.search("^https://somniture.dbs.com.sg/b/ss.*",df["Hit"][i]):
+        Type[i] = "Adobe Anlaytics"	
+ elif re.search("^https://connect.facebook.net/en_US/fbevents.js.*",df["Hit"][i]):
+        Type[i] = "Facebook"		
+ elif re.search(""^https://connect.facebook.net/signals/config.*",df["Hit"][i]):
+        Type[i] = "Facebook"
+ elif re.search("^https://www.facebook.com/tr.*",df["Hit"][i]):
+        Type[i] = "Facebook"
+ else :
+   Type[i]:Npt Found
